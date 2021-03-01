@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .contaiber{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid: "header header header header"
+        "menu main main main"
+        "content content content content"
+        "footer footer footer footer"/ 15% auto 500px auto; 
+        border: solid 1px springgreen;
+        padding: 20px;
+        grid-gap: 10px 10px;        
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: flex-end;
+
+    }
+    .item-header{
+        width: 100%;
+        background-color: burlywood;
+        height: 100px;
+        grid-area: header;
+        
+        
+    }
+    .item-menu{
+        background-color: crimson;
+        grid-area: menu;
+        height: 300px;
+    }
+    .item-main{
+        background-color: darkgoldenrod;
+        grid-area: main;
+        height: 300px;
+    }
+    .item-content{
+        background-color: violet;
+        grid-area: content;
+        display: grid;
+        grid-template: "left right"
+        / 50% 50%; 
+    }
+    .content-left{
+        background-color: yellow;
+        place-self: center stretch;
+        grid-area: left;
+        margin: 10px;
+    }
+    .content-right{
+        background-color: springgreen;
+        grid-area: right;
+        height: 200px;
+        margin: 10px;
+    }
+    
+
+    .item-footer{
+        background-color: blue;
+        grid-area: footer;
+        height: 50px;
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+</style>
+<body>
+    <div class="contaiber">
+        <div class="item-header">
+            <h3>đây là phần header</h3>
+        </div>
+        <div class="item-menu">
+            <p>đây là phần menu</p>
+
+        </div>
+        <div class="item-main">
+
+            <p>đây là phần main</p>
+        </div>
+        <div class="item-content">
+            <div class="content-left">
+                <p>đây là phần left</p>
+            </div>
+            <div class="content-right">
+                <p>đây là phần right</p>
+            </div>
+        </div>
+        <div class="item-footer">
+            <p>đây là phần footer</p>
+        </div>
+    </div>
+</body>
+</html>
