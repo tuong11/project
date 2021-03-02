@@ -1,0 +1,89 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  background-color: deepskyblue;
+  width: 100%;
+}
+.header .header-banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #99ffff;
+  align-items: center;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+  font-size: 24px;
+  padding-right: 20px;
+}
+.header-list .header-items + .header-items {
+  padding-left: 40px;
+}
+.header-list .header-link {
+  text-decoration: none;
+  color: #ff0080;
+}
+.header-list .header-link:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.content {
+  width: 100%;
+  margin-top: 25px;
+}
+.content .contents-center {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content .contents-center .content-menu {
+  width: calc(30% - 20px);
+  background-color: #cccccc;
+}
+.content .contents-center .content-products {
+  width: 70%;
+}
+
+.content-list {
+  font-size: 16px;
+  padding-left: 25px;
+  list-style: none;
+  padding-bottom: 25px;
+}
+.content-list .content-item {
+  margin-top: 20px;
+}
+.content-list .content-item .content-link {
+  text-decoration: none;
+  color: white;
+}
+.content-list .content-item .content-link:hover {
+  text-decoration: underline;
+  color: yellow;
+}

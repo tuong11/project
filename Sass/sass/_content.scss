@@ -1,0 +1,33 @@
+.content{
+    width: 100%;
+    margin-top: 25px;
+    .contents-center{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;        
+        .content-menu{
+            width: calc(30% - 20px);
+            background-color: $corlor_grey;
+        }
+        .content-products{
+            width: 70%;
+        }
+    }
+}
+.content-list{
+    font-size: 16px;
+    padding-left: 25px;
+    list-style: none;
+    padding-bottom: 25px;
+    .content-item{
+        margin-top: 20px;
+        .content-link{
+            text-decoration: none;
+            color: $corlor_white;
+            &:hover{
+                text-decoration: underline;
+                color: $corlor_yellow;
+            }
+        }
+    }
+}
