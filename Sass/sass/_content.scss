@@ -1,33 +1,85 @@
 .content{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
     .contents-center{
         width: 100%;
         display: flex;
-        justify-content: space-between;        
+        justify-content: space-between;
         .content-menu{
-            width: calc(30% - 20px);
-            background-color: $corlor_grey;
+            width: 28%;
         }
         .content-products{
             width: 70%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
     }
 }
+
+.content-title{
+    text-transform: uppercase;
+    width: 100%;
+    background-color: $corlor_black;
+    text-align: center;
+    color: $corlor_white;
+    line-height: 40px;
+    @include mq_min_943{
+        font-size: 18px;
+    }
+}
+.content-qc{
+    
+    img{
+        margin-top: 10px;
+    }
+
+}
 .content-list{
     font-size: 16px;
-    padding-left: 25px;
     list-style: none;
-    padding-bottom: 25px;
+    background-color: $corlor_grey;
+    padding: 5px 0 20px 25px;
     .content-item{
-        margin-top: 20px;
+        margin-top: 25px;
+        text-transform: lowercase;
         .content-link{
             text-decoration: none;
             color: $corlor_white;
             &:hover{
                 text-decoration: underline;
-                color: $corlor_yellow;
+                color: $corlor_aqua;
             }
         }
+    }
+}
+
+.product-item{
+    width: 44%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: solid 1px #ccc;
+    @include mq_min_943{
+        width: 30%;
+        height: 379px;
+    }
+
+}
+.product-content{
+    width: 100%;
+    padding-top: 20px;
+    font-size: 14px;
+    h4{
+        font-size: 22px;
+        color: $corlor_grey;
+    }
+    .content-corlor{
+        padding: 20px 0;
+        font-style: italic;
+        color: #666;
+    }
+    .content-money{
+        color: $corlor_red;
+        font-weight: bold;
     }
 }

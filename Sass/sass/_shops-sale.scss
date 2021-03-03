@@ -1,0 +1,39 @@
+.shops{
+    margin: 45px 0;
+    width: 100%;
+    .shops-sale{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .shops-img{
+            width: 48%;
+            margin-bottom: 30px;
+            @include mq_min_943{
+                width: 24%;
+            }
+        }
+    }
+}
+.shops-content{
+    padding-top: 15px;
+    font-size: 14px;
+    .shops-title{
+        font-size: 22px;
+        color: $corlor_grey;
+    }
+    .shops-corlor{
+        color: #666;
+        padding: 10px 0;
+    }
+    .shops-money{
+        font-weight: bold;
+        color: $corlor-red;
+        .money-dissable{
+            text-decoration: line-through;
+            color: #ccc;
+            padding-left: 20px;
+            font-weight: normal;
+        }
+    }
+}

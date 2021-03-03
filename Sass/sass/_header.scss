@@ -4,25 +4,34 @@
     .header-banner{
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        background-color: $corlor_aqua;
+        justify-content: start;
+        background-color: $corlor_black;
         align-items: center;
+        height: 146px;
+    }
+    .header-nav{
+        margin-left: 40px;
+        display: none;
+        @include mq_min_943{
+            display: block;
+        }
     }
 }
 .header-list{
+    width: 100%;
     list-style: none;
     display: flex;
     font-size: 24px;
-    padding-right: 20px;
     .header-items+.header-items{
         padding-left: 40px;
+        
     }
     .header-link{
         text-decoration: none;
-        color: $corlor_red;
+        color: $corlor_white;
         &:hover{
         text-decoration: underline;
-        color: $corlor_yellow;
+        color: $corlor_aqua;
         }
     }
 }

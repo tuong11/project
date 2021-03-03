@@ -1,0 +1,37 @@
+.footer{
+    width: 100%;
+    background-color: $corlor_blue;
+    .footer-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0;
+        font-size: 16px;
+        .footer-sp{
+            width: 30%;
+        }
+        .footer-img{
+            width: 30%;
+            margin-right: 40px;
+        }        
+    }
+}
+
+.footer-list{
+    list-style: none;
+    .footer-items{
+        padding-bottom: 15px;
+        .footer-link{
+            text-decoration: none;
+            color: $corlor_grey;
+        &:hover{
+            text-decoration: underline;
+            color: $corlor_aqua;
+            }
+        }
+        .link-title{
+            font-size: 28px;
+            color: black;
+        }
+    }
+}

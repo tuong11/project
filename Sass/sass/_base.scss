@@ -15,16 +15,16 @@ img{
     width: 100%;
 }
 $corlor_red: rgb(255, 0, 128);
-$corlor_blue: rgb(0, 191, 255);
-$corlor_green: rgb(0, 255, 0);
+$corlor_blue: #e6e6e6;
+$corlor_black: #4d4d4d;
 $corlor_yellow: rgb(255, 255, 0);
 $corlor_white: white;
 $corlor_aqua: rgb(153, 255, 255);
-$corlor_grey: #cccccc;
+$corlor_grey: #666666;
 
 
-@mixin mq_min_969 {
-    @media (min-width: 969px) {
+@mixin mq_min_943 {
+    @media (min-width: 943px) {
         @content;
     }
 }
