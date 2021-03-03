@@ -6,7 +6,12 @@
         display: flex;
         justify-content: space-between;
         .content-menu{
-            width: 28%;
+            width: 35%;
+            margin-right: 15px;
+            @include mq_min_528{
+                width: 28%;
+            }
+            
         }
         .content-products{
             width: 70%;
@@ -55,10 +60,13 @@
 }
 
 .product-item{
-    width: 44%;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: solid 1px #ccc;
+    @include mq_min_528{
+        width: 42%;
+    }
     @include mq_min_943{
         width: 30%;
         height: 379px;

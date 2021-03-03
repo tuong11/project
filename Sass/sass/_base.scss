@@ -28,3 +28,9 @@ $corlor_grey: #666666;
         @content;
     }
 }
+
+@mixin mq_min_528 {
+    @media (min-width: 528px) {
+        @content;
+    }
+}

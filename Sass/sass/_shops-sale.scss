@@ -7,8 +7,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .shops-img{
-            width: 48%;
+            width: 100%;
             margin-bottom: 30px;
+            @include mq_min_528{
+                width: 48%;
+            }
             @include mq_min_943{
                 width: 24%;
             }

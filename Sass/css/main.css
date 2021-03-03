@@ -68,7 +68,13 @@ img {
   justify-content: space-between;
 }
 .content .contents-center .content-menu {
-  width: 28%;
+  width: 35%;
+  margin-right: 15px;
+}
+@media (min-width: 528px) {
+  .content .contents-center .content-menu {
+    width: 28%;
+  }
 }
 .content .contents-center .content-products {
   width: 70%;
@@ -115,10 +121,15 @@ img {
 }
 
 .product-item {
-  width: 44%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: solid 1px #ccc;
+}
+@media (min-width: 528px) {
+  .product-item {
+    width: 42%;
+  }
 }
 @media (min-width: 943px) {
   .product-item {
@@ -157,8 +168,13 @@ img {
   justify-content: space-between;
 }
 .shops .shops-sale .shops-img {
-  width: 48%;
+  width: 100%;
   margin-bottom: 30px;
+}
+@media (min-width: 528px) {
+  .shops .shops-sale .shops-img {
+    width: 48%;
+  }
 }
 @media (min-width: 943px) {
   .shops .shops-sale .shops-img {
@@ -197,15 +213,23 @@ img {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  flex-wrap: wrap;
   font-size: 16px;
 }
 .footer .footer-content .footer-sp {
-  width: 30%;
+  width: 100%;
+  margin: 20px 0;
 }
-.footer .footer-content .footer-img {
-  width: 30%;
-  margin-right: 40px;
+@media (min-width: 528px) {
+  .footer .footer-content .footer-sp {
+    width: 50%;
+    padding: 0;
+  }
+}
+@media (min-width: 943px) {
+  .footer .footer-content .footer-sp {
+    width: 25%;
+  }
 }
 
 .footer-list {
